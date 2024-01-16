@@ -6,6 +6,8 @@ This workflow prepares the R dependencies for PsN by installing `PsNR` along wit
 
 The 2 cellar packages are built with slight tweaks to enable a local workflow. 1. The original `PsNR` requires `vaplot` to come from `Remotes: rikardn/vaplot@digits`, we don't want to rely on a GitHub branch so we removed the remote source. 2. `vaplot` was built fresh from the digits branch as a local tarball. This way we can use it as a cellar pacakge without having to install from GitHub every time we set up the environment.
 
+`rlibs_r43_jammy.tar.xz` contains all the R libraries needed (all from `~/your-project/renv/library/R-4.3/x86_64-pc-linux-gnu`) to run `library(PsNR)`.
+
 # How it works
 
 1.  Start an RStudio project and make sure you have `renv` activated. This workflow was tested on `renv` 1.0.3.
